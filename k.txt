@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Kimberlin Weber – Solo Travel & Nature Photography</title>
+  <style>
+    /* Base reset and typography */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Helvetica Neue', sans-serif; background-color: #f5f2ec; color: #333; line-height: 1.6; }
+    a { color: #556b2f; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img { max-width: 100%; display: block; }
+
+    /* Layout */
+    header, section, footer { width: 90%; max-width: 900px; margin: 0 auto 3rem; }
+    header { text-align: center; padding-top: 2rem; }
+
+    /* Photo */
+    .portrait { width: 200px; height: 200px; border-radius: 50%; overflow: hidden; margin: 0 auto 1rem; }
+    .portrait img { object-fit: cover; width: 100%; height: 100%; }
+
+    /* Buttons & navigation */
+    nav ul { display: flex; justify-content: center; gap: 1.5rem; margin-top: 1rem; }
+    nav li { list-style: none; }
+
+    /* Headings */
+    h1 { font-size: 2.5rem; color: #374d3a; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.8rem; border-bottom: 2px solid #c2b199; padding-bottom: 0.5rem; margin-bottom: 1rem; color: #4a5338; }
+
+    /* Sections styling */
+    .bio, .portfolio, .itineraries, .blog, .contact { padding: 1rem 0; }
+    .portfolio, .itineraries, .blog { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap: 1.5rem; }
+    .portfolio-item, .itinerary-item, .blog-post { background: #ffffff; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .portfolio-item img { height: 180px; object-fit: cover; margin-bottom: 0.5rem; }
+
+    /* Contact & social */
+    .social-links { margin-top: 1rem; }
+    .social-links a { margin-right: 1rem; font-weight: bold; }
+    .contact form { display: flex; flex-direction: column; gap: 1rem; }
+    .contact input, .contact textarea { padding: 0.7rem; border: 1px solid #aaa; border-radius: 4px; }
+    .contact button { width: 150px; padding: 0.7rem; border: none; border-radius: 4px; background-color: #556b2f; color: #fff; cursor: pointer; }
+    .contact button:hover { background-color: #445a24; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="portrait">
+      <img src="portrait.jpg" alt="Kimberlin Weber">
+    </div>
+    <h1>Kimberlin Weber</h1>
+    <p>Solo world traveler capturing nature and wildlife through my lens.</p>
+    <nav>
+      <ul>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#itineraries">Itineraries & Tips</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="bio" class="bio">
+    <h2>About Me</h2>
+    <p>Hello! I'm Kimberlin Weber, a solo traveler and nature photographer on a mission to document the Earth's wildlife and landscapes. I roam from misty forests to arid deserts, capturing moments that tell the silent stories of our planet.</p>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <h2>Portfolio</h2>
+    <!-- Repeat portfolio-item for each photo with image and caption -->
+    <div class="portfolio-item">
+      <img src="your-photo1.jpg" alt="Description of photo 1">
+      <p>Caption or location of photo 1</p>
+    </div>
+    <div class="portfolio-item">
+      <img src="your-photo2.jpg" alt="Description of photo 2">
+      <p>Caption or location of photo 2</p>
+    </div>
+    <!-- ... -->
+  </section>
+
+  <section id="itineraries" class="itineraries">
+    <h2>Travel Itineraries & Tips</h2>
+    <div class="itinerary-item">
+      <h3>Trail Tails in Patagonia</h3>
+      <p>5-day itinerary across the Andes with wildlife spotting tips for pumas and guanacos.</p>
+    </div>
+    <div class="itinerary-item">
+      <h3>Rainforest Wildlife Walk</h3>
+      <p>How to plan a trek with minimal impact and capture elusive birds at dawn.</p>
+    </div>
+    <!-- ... -->
+  </section>
+
+  <section id="blog" class="blog">
+    <h2>Blog</h2>
+    <div class="blog-post">
+      <h3>The Magic of Golden Hour in the Arctic</h3>
+      <p>Experiencing the slow dance of light and ice—how to find the best vantage points.</p>
+    </div>
+    <div class="blog-post">
+      <h3>Essentials for Solo Wildlife Shoots</h3>
+      <p>My go-to gear and mindset for safe, respectful, and rewarding animal encounters.</p>
+    </div>
+    <!-- ... -->
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Get in Touch</h2>
+    <p>Let’s connect—whether to talk adventure, collaborate, or commission a shoot.</p>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="social-links">
+      <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+      <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+      <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a>
+    </div>
+  </section>
+
+  <footer style="text-align:center; padding-bottom:2rem;">
+    <p>&copy; 2025 Kimberlin Weber. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
